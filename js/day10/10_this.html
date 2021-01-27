@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // console.log(this);
+        function fun() {
+            console.log(this);
+        }
+        var obj = {
+            name:"yuki",
+            getName:fun
+        };
+        console.log(obj.getName === fun);
+        fun();
+        obj.getName();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

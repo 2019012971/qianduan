@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        label{
+            position: relative;
+            /*label 是inline元素，类似span，而加了float会被强制转化为block元素；所以，正常的手法应该加 display:block; */
+            float: left;
+            width: 200px;
+            height: 200px;
+            border: 1px solid deeppink;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        label > span{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+        input{
+            position: relative;
+            left: -50px;
+            top: -50px;
+        }
+        input:checked + span{
+            background: deeppink;
+        }
+    </style>
+</head>
+<body>
+<label>
+    <input type="radio" name="1">
+    <span></span>
+</label>
+
+<label>
+    <input type="radio" name="1">
+    <span></span>
+</label>
+
+<label>
+    <input type="radio" name="1">
+    <span></span>
+</label>
+<br>
+<p><span>hhh</span>123</p>
+</body>
+</html>

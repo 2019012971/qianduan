@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var reg = /ab+c/;
+        console.log(reg.test("abbc"));
+        reg = /^a|a$/;
+        console.log(reg.test("avava"));
+        reg = /^1[3-9][0-9]{9}$/;
+        console.log(reg.test("13265058880"));
+        reg = /\./;
+        console.log(reg.test("a."));
+        reg = /\s/;
+        console.log(reg.test("a"));
+        reg = /\bchild\b/;
+        console.log(reg.test("child"));
+        var str = prompt("请输入用户名");
+        str = str.replaceAll(/^\s+|\s+$/g, "");
+        console.log(str);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

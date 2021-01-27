@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var fun = new Function("console.log('hello');");
+        console.log(fun());
+        fun.name = "hello";
+        console.log(fun.name);
+
+        /*
+        function declare
+         */
+        function fun2(){
+            console.log("hello")
+        }
+
+        // console.log(fun2())
+        fun2();
+
+        var fun3 = function (){
+            console.log('niming');
+        }
+        fun3();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

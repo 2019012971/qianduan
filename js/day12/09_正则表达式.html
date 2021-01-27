@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var reg = /a/i;
+        console.log(reg.test("a"));
+        reg = /ab/;
+        console.log(reg.test("ab"));
+        reg = /[A-z]/;
+        console.log(reg.test("a"));
+        reg = /a[bde]c/;
+        console.log(reg.test("aec"));
+        reg = /[^ab]/;
+        console.log(reg.test("ab"));
+        var str = "1a2b3c4d5e6fA7";
+        console.log(str.split(/[A-z]/));
+        console.log(str.search(/[0-9]/));
+        console.log(Array.isArray(str.match(/[A-z]/g)));
+        console.log(str.replaceAll(/[A-z]/g, ""));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

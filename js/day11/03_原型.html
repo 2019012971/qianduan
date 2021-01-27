@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function Person() {
+
+        }
+        Person.prototype.a = 123;
+        Person.prototype.sayhello = function () {
+            console.log("hello");
+        }
+        var person = new Person();
+        // person.a = 234;
+        console.log(Person.prototype);
+        console.log(person.__proto__ === Person.prototype);
+        console.log(person.a);
+        person.sayhello();
+        // person.a=123;
+        console.log(person.hasOwnProperty("a"));;
+    </script>
+</head>
+<body>
+
+</body>
+</html>
